@@ -21,10 +21,15 @@ struct NotchContainerView: View {
                 NotchOpenView()
                     .frame(width: size.width, height: size.height)
                     .transition(.opacity.combined(with: .scale(scale: 0.95, anchor: .top)))
+            } else if let module = model.compactModule {
+                NotchCompactView(module: module)
+                    .frame(width: size.width, height: size.height)
+                    .transition(.opacity)
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .animation(.spring(response: 0.38, dampingFraction: 0.78), value: model.state)
+        .animation(.spring(response: 0.38, dampingFraction: 0.78), value: model.compactModule?.id)
         .animation(.default, value: model.geometry)
         .preferredColorScheme(.dark)
     }
@@ -68,6 +73,25 @@ struct NotchOpenView: View {
             .padding(.bottom, 16)
         }
         .foregroundStyle(.white)
+    }
+}
+
+/// Closed layout while a module has activity: its compact content on both sides of the camera.
+struct NotchCompactView: View {
+    @Environment(NotchViewModel.self) private var model
+    let module: any NotchModule
+
+    var body: some View {
+        let side = NotchViewModel.compactSideWidth
+        let height = model.geometry.notchSize.height
+        HStack(spacing: 0) {
+            module.makeCompactLeading()
+                .frame(width: height - 12, height: height - 12)
+                .frame(width: side)
+            Spacer(minLength: model.geometry.notchSize.width)
+            module.makeCompactTrailing()
+                .frame(width: side)
+        }
     }
 }
 

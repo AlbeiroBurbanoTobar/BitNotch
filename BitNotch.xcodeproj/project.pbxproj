@@ -7,40 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0989E7AD1BD35E1F89029682 /* MusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B61523C4E072E7C8641879 /* MusicController.swift */; };
 		0C2AAE6FDA2E1D7AAA82E4D2 /* NotchShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985C13DBE8F0001982B476F /* NotchShape.swift */; };
 		1247119FCB9E3E5CD526D963 /* NotchContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3FFED5695554668F513DD4 /* NotchContainerView.swift */; };
+		17DE8B4606C732438ED1A5B5 /* AppleMusicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB6EF701CE4AE9C455DBC06 /* AppleMusicProvider.swift */; };
 		1AF30101F2771AC50F273906 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5EB47F72D7038E57F6345C /* SettingsView.swift */; };
 		2BDDD1D82FA809AC6964C305 /* NotchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B42B4BE82FEA7CD652EE9D5 /* NotchViewModel.swift */; };
 		3D344D49935455848731D03F /* ShelfModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C2854D67963A7594FF17D /* ShelfModule.swift */; };
+		4A12ADEC3F30644737CF7647 /* MusicCompactViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E408B5B13DE8240D0304DF11 /* MusicCompactViews.swift */; };
 		4FC78AFAB12CA1257D0A7297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEACE895A5C9721515E903FB /* Assets.xcassets */; };
+		5253B7884490EB3579DFCB13 /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8AB9F6CE002A3695607857 /* MusicPlayerView.swift */; };
 		7EE996BB58D4A0B5C72EFC76 /* NotchWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D921EE01A79678BDF4E27 /* NotchWindowController.swift */; };
+		85D75ED230D42A1F0D9C4B9C /* AppleScriptRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2AA75170D99901DCDBC8D2 /* AppleScriptRunner.swift */; };
 		8AB2C86297233CBF34F244CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D3AF5E6C0CFC4AB74CFD0B /* AppDelegate.swift */; };
 		8CC75C8DDB87B442C66435DB /* NotchPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A96F29E970C280B417F454 /* NotchPanel.swift */; };
 		915826E6DF9B10C2F12A4F10 /* NotchModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFD88C34DD63FA32AD64F93 /* NotchModule.swift */; };
 		9ED829D8D1A1D266427D5D8F /* BitNotchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F2F7FEB51048B7E3F64C1 /* BitNotchApp.swift */; };
 		BA4ABEFFE07F5E1BE9E2883A /* NotchGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E266F46EC967E9078F877D /* NotchGeometry.swift */; };
 		D77E8A517AB856B802237F5B /* MusicModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B66C9EF7E70E6785DFA7DD /* MusicModule.swift */; };
+		DB9067F66E40E6A420E8A8EB /* SpotifyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD90BCB4E9F5BE69F825CB58 /* SpotifyProvider.swift */; };
 		DE21545295B5A5102ACBB7F5 /* PlaceholderModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B1E4EE704E15684A98168 /* PlaceholderModuleView.swift */; };
+		FE2C5F51B0455D57AD99CE5E /* NowPlayingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2660589C9C6445F0C12712 /* NowPlayingProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		004C2854D67963A7594FF17D /* ShelfModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfModule.swift; sourceTree = "<group>"; };
 		033CCD6C93A685036E30EE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0B8AB9F6CE002A3695607857 /* MusicPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerView.swift; sourceTree = "<group>"; };
+		10B61523C4E072E7C8641879 /* MusicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicController.swift; sourceTree = "<group>"; };
 		1B42B4BE82FEA7CD652EE9D5 /* NotchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchViewModel.swift; sourceTree = "<group>"; };
 		1CFD88C34DD63FA32AD64F93 /* NotchModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchModule.swift; sourceTree = "<group>"; };
 		2F3FFED5695554668F513DD4 /* NotchContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchContainerView.swift; sourceTree = "<group>"; };
 		365F2F7FEB51048B7E3F64C1 /* BitNotchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitNotchApp.swift; sourceTree = "<group>"; };
+		3C2660589C9C6445F0C12712 /* NowPlayingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingProvider.swift; sourceTree = "<group>"; };
 		45E7DFB7A9126574F2140AC8 /* BitNotch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BitNotch.entitlements; sourceTree = "<group>"; };
 		543B1E4EE704E15684A98168 /* PlaceholderModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderModuleView.swift; sourceTree = "<group>"; };
 		6C5EB47F72D7038E57F6345C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		74B66C9EF7E70E6785DFA7DD /* MusicModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModule.swift; sourceTree = "<group>"; };
 		78E266F46EC967E9078F877D /* NotchGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchGeometry.swift; sourceTree = "<group>"; };
+		9A2AA75170D99901DCDBC8D2 /* AppleScriptRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleScriptRunner.swift; sourceTree = "<group>"; };
+		9FB6EF701CE4AE9C455DBC06 /* AppleMusicProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicProvider.swift; sourceTree = "<group>"; };
 		A3D3AF5E6C0CFC4AB74CFD0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE341A2E3DBD3BF185572C6 /* BitNotch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitNotch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A96F29E970C280B417F454 /* NotchPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchPanel.swift; sourceTree = "<group>"; };
 		D985C13DBE8F0001982B476F /* NotchShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchShape.swift; sourceTree = "<group>"; };
 		DEACE895A5C9721515E903FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E37D921EE01A79678BDF4E27 /* NotchWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchWindowController.swift; sourceTree = "<group>"; };
+		E408B5B13DE8240D0304DF11 /* MusicCompactViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCompactViews.swift; sourceTree = "<group>"; };
+		FD90BCB4E9F5BE69F825CB58 /* SpotifyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -65,6 +79,7 @@
 		6E731234BD833DF05BD1E716 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9A2AA75170D99901DCDBC8D2 /* AppleScriptRunner.swift */,
 				1CFD88C34DD63FA32AD64F93 /* NotchModule.swift */,
 				543B1E4EE704E15684A98168 /* PlaceholderModuleView.swift */,
 			);
@@ -95,7 +110,13 @@
 		9A743AD6B79C0AB31975C214 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				9FB6EF701CE4AE9C455DBC06 /* AppleMusicProvider.swift */,
+				E408B5B13DE8240D0304DF11 /* MusicCompactViews.swift */,
+				10B61523C4E072E7C8641879 /* MusicController.swift */,
 				74B66C9EF7E70E6785DFA7DD /* MusicModule.swift */,
+				0B8AB9F6CE002A3695607857 /* MusicPlayerView.swift */,
+				3C2660589C9C6445F0C12712 /* NowPlayingProvider.swift */,
+				FD90BCB4E9F5BE69F825CB58 /* SpotifyProvider.swift */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -219,8 +240,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AB2C86297233CBF34F244CE /* AppDelegate.swift in Sources */,
+				17DE8B4606C732438ED1A5B5 /* AppleMusicProvider.swift in Sources */,
+				85D75ED230D42A1F0D9C4B9C /* AppleScriptRunner.swift in Sources */,
 				9ED829D8D1A1D266427D5D8F /* BitNotchApp.swift in Sources */,
+				4A12ADEC3F30644737CF7647 /* MusicCompactViews.swift in Sources */,
+				0989E7AD1BD35E1F89029682 /* MusicController.swift in Sources */,
 				D77E8A517AB856B802237F5B /* MusicModule.swift in Sources */,
+				5253B7884490EB3579DFCB13 /* MusicPlayerView.swift in Sources */,
 				1247119FCB9E3E5CD526D963 /* NotchContainerView.swift in Sources */,
 				BA4ABEFFE07F5E1BE9E2883A /* NotchGeometry.swift in Sources */,
 				915826E6DF9B10C2F12A4F10 /* NotchModule.swift in Sources */,
@@ -228,9 +254,11 @@
 				0C2AAE6FDA2E1D7AAA82E4D2 /* NotchShape.swift in Sources */,
 				2BDDD1D82FA809AC6964C305 /* NotchViewModel.swift in Sources */,
 				7EE996BB58D4A0B5C72EFC76 /* NotchWindowController.swift in Sources */,
+				FE2C5F51B0455D57AD99CE5E /* NowPlayingProvider.swift in Sources */,
 				DE21545295B5A5102ACBB7F5 /* PlaceholderModuleView.swift in Sources */,
 				1AF30101F2771AC50F273906 /* SettingsView.swift in Sources */,
 				3D344D49935455848731D03F /* ShelfModule.swift in Sources */,
+				DB9067F66E40E6A420E8A8EB /* SpotifyProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

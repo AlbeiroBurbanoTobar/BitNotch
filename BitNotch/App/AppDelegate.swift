@@ -2,7 +2,11 @@ import AppKit
 
 @MainActor
 final class AppDelegate: NSObject, NSApplicationDelegate {
-    let registry = ModuleRegistry()
+    let music = MusicController()
+    lazy var registry = ModuleRegistry(modules: [
+        MusicModule(controller: music),
+        ShelfModule(),
+    ])
     private var notchController: NotchWindowController?
 
     func applicationDidFinishLaunching(_ notification: Notification) {

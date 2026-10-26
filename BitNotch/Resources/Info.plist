@@ -26,6 +26,8 @@
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>LSUIElement</key>
 	<true/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>BitNotch controls Spotify and Music to show what is playing and to play, pause and skip tracks from the notch.</string>
 	<key>NSHumanReadableCopyright</key>
 	<string></string>
 </dict>

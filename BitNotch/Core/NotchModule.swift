@@ -9,6 +9,19 @@ protocol NotchModule {
     var systemImage: String { get }
 
     func makeView() -> AnyView
+
+    /// Whether the module has something to show beside the closed notch (for example, music playing).
+    var hasCompactActivity: Bool { get }
+    /// Content shown left of the closed notch while `hasCompactActivity` is true.
+    func makeCompactLeading() -> AnyView
+    /// Content shown right of the closed notch while `hasCompactActivity` is true.
+    func makeCompactTrailing() -> AnyView
+}
+
+extension NotchModule {
+    var hasCompactActivity: Bool { false }
+    func makeCompactLeading() -> AnyView { AnyView(EmptyView()) }
+    func makeCompactTrailing() -> AnyView { AnyView(EmptyView()) }
 }
 
 /// Every available module, and which ones the user has turned on.
@@ -17,14 +30,12 @@ protocol NotchModule {
 final class ModuleRegistry {
     private static let disabledModulesKey = "disabledModuleIDs"
 
-    let allModules: [any NotchModule] = [
-        MusicModule(),
-        ShelfModule(),
-    ]
+    let allModules: [any NotchModule]
 
     private(set) var disabledIDs: Set<String>
 
-    init() {
+    init(modules: [any NotchModule]) {
+        allModules = modules
         disabledIDs = Set(UserDefaults.standard.stringArray(forKey: Self.disabledModulesKey) ?? [])
     }
 

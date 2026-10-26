@@ -28,10 +28,13 @@ targets:
         LSUIElement: true
         LSApplicationCategoryType: public.app-category.productivity
         NSHumanReadableCopyright: ""
+        NSAppleEventsUsageDescription: BitNotch controls Spotify and Music to show what is playing and to play, pause and skip tracks from the notch.
     entitlements:
       path: BitNotch/Resources/BitNotch.entitlements
       properties:
         com.apple.security.app-sandbox: false
+        # Required by the hardened runtime to send Apple Events to Spotify and Music.
+        com.apple.security.automation.apple-events: true
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.bitnotch.BitNotch
